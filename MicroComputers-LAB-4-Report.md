@@ -76,11 +76,11 @@ In the void main part:-
 
 All the bits needed for the system and external interrupt bits are initialized.
 
-1.Input/Output Pins
-2.External Interrupt Enable
-3.Global Interrupt Enable
-4.Interrupt Edge (Rising or Falling)
-5.Disable the interrupt Flag
+	1.Input/Output Pins
+	2.External Interrupt Enable
+	3.Global Interrupt Enable
+	4.Interrupt Edge (Rising or Falling)
+	5.Disable the interrupt Flag
 
 inside a while loop
 
