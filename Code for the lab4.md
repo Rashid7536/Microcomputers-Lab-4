@@ -56,14 +56,14 @@
 
            while(1){
            
-              if( (RB2 == 0) && (RB3 == 1) && (RB0 == 1 ) ){ //When Sensor 001 is logic High
+              if( (RB2 == 0) && (RB3 == 1) && (RB0 == 1 ) ){ //When Sensor 001 is logic Low
 
                   RC2 = 1; //Input Motor
                   RC3 = 0; //Output Motor
 
               }
 
-              if ( (RB2 == 0) && (RB3 == 0) && (RB0 == 1) ){ //When Sensor 001 and 002 are on
+              if ( (RB2 == 0) && (RB3 == 0) && (RB0 == 1) ){ //When Sensor 001 and 002 are giving logic low
 
                   RC2 = 1; //Input Motor
                   RC3 = 0; //Output Motor
