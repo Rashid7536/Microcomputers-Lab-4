@@ -40,12 +40,12 @@ For the digital sensors, soil moisture sensors are being used here. They can giv
 The PCB Layout that we printed as follows,
 https://drive.google.com/file/d/1YAVGnp-lG2UeCNIRzJWQl6rsJWoeWoFJ/view?usp=sharing
 
-1.The place for the push button (Reset button for the PIC16F877A - MCLR) 
-2.The power input and the place for the large resistor which is for the push button
-3.Place for the Oscillator and the Capacitors
-4.Output digital signal for the motor driver
-5.Input from the sensors
-6.Interrupt trigger pin and pin for eliminating floating values
+	1.The place for the push button (Reset button for the PIC16F877A - MCLR) 
+	2.The power input and the place for the large resistor which is for the push button
+	3.Place for the Oscillator and the Capacitors
+	4.Output digital signal for the motor driver
+	5.Input from the sensors
+	6.Interrupt trigger pin and pin for eliminating floating values
 
 Finally, by soldering and adding the components we were able to finalize the system as follows,
 
@@ -84,18 +84,15 @@ All the bits needed for the system and external interrupt bits are initialized.
 
 inside a while loop
 
-	if(Sensor 1 is high and Sensor 2 is low and Sensor 3 is low)
-		{
+	if(Sensor 1 is high and Sensor 2 is low and Sensor 3 is low){
 			Run Motor 01
-		}
-	if(Sensor 1 is high and Sensor 2 is high and Sensor 3 is low)
-		{
+	}
+	if(Sensor 1 is high and Sensor 2 is high and Sensor 3 is low){
 			Run Motor 01
-		}
-	else
-		{
+	}
+	else{
 			Dont run any motors
-		}
+	}
 
 
 
