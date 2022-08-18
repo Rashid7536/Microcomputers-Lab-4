@@ -76,26 +76,26 @@ In the void main part:-
 
 All the bits needed for the system and external interrupt bits are initialized.
 
-Input/Output Pins
-External Interrupt Enable
-Global Interrupt Enable
-Interrupt Edge (Rising or Falling)
-Disable the interrupt Flag
+1.Input/Output Pins
+2.External Interrupt Enable
+3.Global Interrupt Enable
+4.Interrupt Edge (Rising or Falling)
+5.Disable the interrupt Flag
 
 inside a while loop
 
-if(Sensor 1 is high and Sensor 2 is low and Sensor 3 is low)
-{
-	Run Motor 01
-}
-if(Sensor 1 is high and Sensor 2 is high and Sensor 3 is low)
-{
-	Run Motor 01
-}
-else
-{
-	Dont run any motors
-}
+	if(Sensor 1 is high and Sensor 2 is low and Sensor 3 is low)
+		{
+			Run Motor 01
+		}
+	if(Sensor 1 is high and Sensor 2 is high and Sensor 3 is low)
+		{
+			Run Motor 01
+		}
+	else
+		{
+			Dont run any motors
+		}
 
 
 
