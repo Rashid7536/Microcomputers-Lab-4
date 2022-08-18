@@ -50,6 +50,7 @@ https://drive.google.com/file/d/1YAVGnp-lG2UeCNIRzJWQl6rsJWoeWoFJ/view?usp=shari
 Finally, by soldering and adding the components we were able to finalize the system as follows,
 
 https://drive.google.com/file/d/1H87HUK6hs-FgQ8gjonDJ9F60K89HBOWY/view?usp=sharing
+
 Some pictures of the implementation:
 
 https://drive.google.com/file/d/1RHqjGneW1jiFYtXKjLWVvMFkqbLbWdbr/view?usp=sharing
@@ -66,6 +67,7 @@ Next, when the sensor 2 detects the water, the motor 1 continues to run, as soon
 This is the complete procedure cycle of the system that we have made.
 
 The code for the system is uploaded in a Github repository.
+
 https://github.com/Rashid7536/Microcomputers-Lab-4/blob/b0c688dbe88d69a55fb8d17aa8c7aa69fa69b5f0/Code%20for%20the%20lab4.md
 
 Logic of the Code as follows,
