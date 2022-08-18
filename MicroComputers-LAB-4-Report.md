@@ -84,16 +84,18 @@ Disable the interrupt Flag
 
 inside a while loop
 
-if(Sensor 1 is high and Sensor 2 is low and Sensor 3 is low){
+if(Sensor 1 is high and Sensor 2 is low and Sensor 3 is low)
+{
 	Run Motor 01
 }
-if(Sensor 1 is high and Sensor 2 is high and Sensor 3 is low){
+if(Sensor 1 is high and Sensor 2 is high and Sensor 3 is low)
+{
 	Run Motor 01
 }
-else{
+else
+{
 	Dont run any motors
 }
-//as soon as the pin 
 
 
 
