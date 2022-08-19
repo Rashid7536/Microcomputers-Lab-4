@@ -18,7 +18,7 @@ A printed circuit board, or PCB, is a device that holds electronic components me
 
 First of all, the function that we needed for the PIC  to run as follows, 
 
-https://drive.google.com/file/d/1iybqHZAVzWQbBDCXy13ovRKAeQ5FwjRY/view?usp=sharing
+![Setup_Intro](https://user-images.githubusercontent.com/42742349/185554324-6d4274c4-3491-4453-b949-619e309d6db5.png)
 
 When the lower level sensor detects digital high, the input motor should start to pump water to the tank, the function remains the same even when the middle level water sensor detects digital high, as soon as the top level water sensor detects logic high, the input motor should stop working and the output motor should turn on for 500ms and stop. (500ms is 0.5s)
 Design the PCB  - After converting the circuit’s schematic diagram into a PCB layout, placed the components as required using Proteus Professional software, Then drill holes were inserted in suitable places on PCB design. After rooting the traces the PCB design was completed.  
@@ -36,14 +36,15 @@ Applied the code to the Pic16f877A using Pickit 3.
 ## How the system works:
 
 The image of the Simulation:-
-https://drive.google.com/file/d/16wkifChMjYEpcTdzgOn8arK50jxofBWs/view?usp=sharing
 
+![Simulation](https://user-images.githubusercontent.com/42742349/185554393-f029540b-e1b0-473e-80c9-c29d20e0a735.png)
 
 For the digital sensors, soil moisture sensors are being used here. They can give both a digital and an analog signal, since PIC16F877A can only detect digital signals through its pins (without using ADC_converter), the digital output is considered. 
 
 
 The PCB Layout that we printed as follows,
-https://drive.google.com/file/d/1YAVGnp-lG2UeCNIRzJWQl6rsJWoeWoFJ/view?usp=sharing
+
+![PCB Design](https://user-images.githubusercontent.com/42742349/185554470-010440ca-0c73-402d-b8cf-b8705969e502.png)
 
 	1.The place for the push button (Reset button for the PIC16F877A - MCLR) 
 	2.The power input and the place for the large resistor which is for the push button
@@ -52,14 +53,15 @@ https://drive.google.com/file/d/1YAVGnp-lG2UeCNIRzJWQl6rsJWoeWoFJ/view?usp=shari
 	5.Input from the sensors
 	6.Interrupt trigger pin and pin for eliminating floating values
 
-Finally, by soldering and adding the components we were able to finalize the system as follows,
-
-https://drive.google.com/file/d/1H87HUK6hs-FgQ8gjonDJ9F60K89HBOWY/view?usp=sharing
-
 ### Some pictures of the implementation:
 
-https://drive.google.com/file/d/1RHqjGneW1jiFYtXKjLWVvMFkqbLbWdbr/view?usp=sharing
-https://drive.google.com/file/d/1Zqbi_D8yuiDWRrSDI3vmwjJN2EHjo4XI/view?usp=sharing
+![Soldering](https://user-images.githubusercontent.com/42742349/185554648-7e4802e5-a4f2-4ae1-a6d9-6ce26bed4665.jpeg)
+
+![Soldered 01](https://user-images.githubusercontent.com/42742349/185554655-744649fc-4c37-488b-ab15-1cda674b36ee.jpeg)
+
+Finally, by soldering and adding the components we were able to finalize the system as follows,
+
+![Final_setup](https://user-images.githubusercontent.com/42742349/185554587-32cc6919-a118-4df7-95fa-84b9fc5af991.jpeg)
 
 A 12V input is given to the motor driver, since it can handle upto 32V, there is a voltage regulator in the motor module to reduce the voltage to 5V, by taking that 5V from the motor driver, the PIC microcontroller and the sensors was powered on.
 
