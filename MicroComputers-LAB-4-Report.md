@@ -1,15 +1,20 @@
-Micro Lab 4 - Group 13
+# Microcomputers - Lab 4 - Group 13
+### Water Controlling System Using PIC16F877A
+
+	Group Members: 
+	M.A.Rashid - EN21498756
+	D.M.N.A.T.Deheragoda - EN21483974
+	D.G.M.A. De Silva - EN21488238
 
 
-
-Introduction:
+## Introduction:
 
 The main goal of this lab is to build a simple water level control system for a water tank using the PIC16f877A's interrupts and other programming techniques. For a better result, knowledge of PCB fabrication is also applied to this project.  
 A printed circuit board, or PCB, is a device that holds electronic components mechanically and connects them electrically using copper-cut conductive channels bonded to an insulating substrate. The two water pumps at their respective water level can be managed by the electronic circuit that we have created for this project.
 
 
 
-Procedure:
+## Procedure:
 
 First of all, the function that we needed for the PIC  to run as follows, 
 
@@ -28,7 +33,7 @@ Applied the code to the Pic16f877A using Pickit 3.
 
 
 
-How the system works:
+## How the system works:
 
 The image of the Simulation:-
 https://drive.google.com/file/d/16wkifChMjYEpcTdzgOn8arK50jxofBWs/view?usp=sharing
@@ -51,7 +56,7 @@ Finally, by soldering and adding the components we were able to finalize the sys
 
 https://drive.google.com/file/d/1H87HUK6hs-FgQ8gjonDJ9F60K89HBOWY/view?usp=sharing
 
-Some pictures of the implementation:
+### Some pictures of the implementation:
 
 https://drive.google.com/file/d/1RHqjGneW1jiFYtXKjLWVvMFkqbLbWdbr/view?usp=sharing
 https://drive.google.com/file/d/1Zqbi_D8yuiDWRrSDI3vmwjJN2EHjo4XI/view?usp=sharing
@@ -60,7 +65,7 @@ A 12V input is given to the motor driver, since it can handle upto 32V, there is
 
 
 
-Demo (Results) and the Code:
+## Demo (Results) and the Code:
 
 As anticipated before the system works perfectly, as soon as the soil moisture sensor 1 detects water, the a logic high is sent through the Digital output pin, which the microcontroller detects and turns on the input motor which is the motor with the blue fins.
 Next, when the sensor 2 detects the water, the motor 1 continues to run, as soon as the sensor 3 is detected the input motor stops and output motor runs for 0.5s and stops as well.
@@ -72,7 +77,7 @@ https://github.com/Rashid7536/Microcomputers-Lab-4/blob/0dd1911774dc7c5ba5ddfb66
 
 Logic of the Code as follows,
 
-In the void main part:-
+### In the void main part:-
 
 All the bits needed for the system and external interrupt bits are initialized.
 
@@ -96,7 +101,7 @@ inside a while loop
 
 
 
-Discussion:
+## Discussion:
 
 Compared to other digital sensors in the market the soil moisture sensor gives a digital high when there’s no water detection, which means when the soil moisture detects water there’s no voltage output, and when the soil moisture is in the air, it gives highest voltage (logic high) as output.
 Therefore we changed the code to detect drops in voltage instead of detecting logic high’s.
